@@ -1,0 +1,237 @@
+:root{
+  --primary-color: #222;
+  --scondary-color: white;
+  --terciary-color: #007ced;
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--scondary-color);
+}
+
+body{
+  width: 100%;
+  padding: 0 0;
+  left: 0;
+  right: 0;
+  margin: 0 0;
+  background-color: var(--primary-color);
+  font-size: 16px;
+}
+header{
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #welcome-section{
+    padding-top: 8%;
+    height: 600px;
+    width: 100%;
+    background-color: var(--primary-color);
+  }
+  #Habilidades{
+    padding-top: 5%;
+    height: 600px;
+    width: 100%;
+    background-color: var(--primary-color);
+  }
+  #projects{
+    height: 600px;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding-top: 5%;
+  }
+  .self{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+  }
+  #navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-color); 
+  }
+
+  nav a{
+    color: var(--scondary-color);
+    text-decoration: none;
+  }
+  nav a:hover{
+    color: var(--terciary-color);
+  }
+  .img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #eu{
+    width: 50%;
+    height: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid var(--terciary-color);
+  }
+  .intro{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7%;
+  }
+  .name{
+    color: var(--terciary-color);
+    font-size: 3.5rem;
+    font-style: bold;
+  }
+  span{
+    color: var(--terciary-color);
+  }
+  .function{
+    font-style: bold;
+    font-size: 2rem;
+  }
+  .text-intro{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .socials{
+    position: absolute;
+    bottom: 100px;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+  }
+  .socials a{
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: var(--terciary-color);
+    color: var(--terciary-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+  }
+  .socials a:hover{
+    background: var(--primary-color);
+  }
+  .habilidades{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6%;
+  }
+  .hl{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .skills{
+    height: 90%;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .skills a{
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent;
+    overflow: hidden;
+    transition: .5s;
+  }
+  .skill-name{
+    padding: 0 20px;
+    color: var(--scondary-color);
+  }
+  .tech{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: linear-gradient(90deg, var(--terciary-color), var(--primary-color));
+    border-radius: 10% 0% 0% 10%;
+  }
+  .tech a:hover{
+    background: var(--primary-color);
+  }
+  .soft{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    background: linear-gradient(90deg, var(--primary-color), var(--terciary-color));
+    border-radius: 0% 10% 10% 0%;
+  }
+  .soft a:hover{
+    background: var(--primary-color);
+  }
+  .projects-head{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects-grid{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+  }
+  .proj{
+    height: 60%;
+    width: 35%;
+    border: 2px solid var(--terciary-color);
+  }
+  .project-tile{
+    width: 100%;
+    height: 100%;
+  }
+  .proj a{
+    text-align: center;
+    text-decoration: none;
+  } 
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px; 
+    }
+  }
+  
