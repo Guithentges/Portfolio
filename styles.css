@@ -213,7 +213,6 @@ header{
   .proj{
     height: 60%;
     width: 35%;
-    border: 2px solid var(--terciary-color);
   }
   .project-tile{
     width: 100%;
