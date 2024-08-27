@@ -26,19 +26,18 @@ header{
     left: 0;
   }
   #welcome-section{
-    padding-top: 8%;
-    height: 600px;
+    padding-top: 7vh;
+    height: 100vh;
     width: 100%;
     background-color: var(--primary-color);
   }
   #Habilidades{
-    padding-top: 5%;
-    height: 600px;
+    height: 100vh;
     width: 100%;
     background-color: var(--primary-color);
   }
   #projects{
-    height: 600px;
+    height: 100vh;
     width: 100%;
     background-color: var(--primary-color);
     padding-top: 5%;
@@ -71,11 +70,12 @@ header{
     color: var(--terciary-color);
   }
   .img{
-    width: 50%;
-    height: 100%;
+    width: 50vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
   }
   #eu{
     width: 50%;
@@ -91,43 +91,43 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 7%;
+    padding-bottom: 5%;
   }
   .name{
     color: var(--terciary-color);
     font-size: 3.5rem;
     font-style: bold;
   }
-  span{
+  #welcome-section span{
     color: var(--terciary-color);
+    font-size: 3vw;
   }
   .function{
     font-style: bold;
-    font-size: 2rem;
+    font-size: 2vw;
   }
   .text-intro{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
   }
   .socials{
-    position: absolute;
-    bottom: 100px;
-    width: 15%;
+    position: relative;
+    width: 35%;
+    height: 5%;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 3%;
   }
   .socials a{
     position: relative;
     display: inline-flex;
-    width: 40px;
-    height: 40px;
+    width: 2.5vw;
+    height: 5vh;
     background: transparent;
     text-decoration: none;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.5vw;
     background-color: var(--terciary-color);
     color: var(--terciary-color);
     z-index: 1;
@@ -144,6 +144,7 @@ header{
     flex-direction: column;
     align-items: center;
     padding-top: 6%;
+    font-size: 1.5vw;
   }
   .hl{
     height: 10%;
@@ -159,7 +160,7 @@ header{
     justify-content: center;
   }
   .skills a{
-    font-size: 30px;
+    font-size: 2.5vw;
     text-decoration: none;
     background: transparent;
     overflow: hidden;
@@ -201,6 +202,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5vw;
   }
   .projects-grid{
     height: 85%;
@@ -211,12 +213,13 @@ header{
     align-items: center;
   }
   .proj{
-    height: 60%;
-    width: 35%;
+    height: 50vh;
+    width: 30vw;
   }
   .project-tile{
     width: 100%;
     height: 100%;
+    border-radius: 5%;
   }
   .proj a{
     text-align: center;
