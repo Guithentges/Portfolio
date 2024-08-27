@@ -75,11 +75,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
   #eu{
     width: 50%;
-    height: 60%;
     border-radius: 50%;
     object-fit: cover;
     border: 10px solid var(--terciary-color);
@@ -112,8 +111,8 @@ header{
   }
   .socials{
     position: relative;
-    width: 35%;
-    height: 5%;
+    width: 15vw;
+    height: 3vh;
     display: flex;
     justify-content: space-between;
   }
@@ -139,7 +138,7 @@ header{
   }
   .habilidades{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,7 +204,7 @@ header{
     font-size: 1.5vw;
   }
   .projects-grid{
-    height: 85%;
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: row;
