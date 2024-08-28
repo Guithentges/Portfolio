@@ -26,18 +26,18 @@ header{
     left: 0;
   }
   #welcome-section{
-    padding-top: 7vh;
-    height: 100vh;
+    padding-top: 10%;
+    height: 100%;
     width: 100%;
     background-color: var(--primary-color);
   }
   #Habilidades{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: var(--primary-color);
   }
   #projects{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: var(--primary-color);
     padding-top: 5%;
@@ -70,8 +70,8 @@ header{
     color: var(--terciary-color);
   }
   .img{
-    width: 50vw;
-    height: 100vh;
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +79,7 @@ header{
   }
   #eu{
     width: 50%;
+    height: 50%;
     border-radius: 50%;
     object-fit: cover;
     border: 10px solid var(--terciary-color);
@@ -94,39 +95,39 @@ header{
   }
   .name{
     color: var(--terciary-color);
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-style: bold;
   }
-  #welcome-section span{
+  .job{
     color: var(--terciary-color);
-    font-size: 3vw;
+    font-size: 35px;
   }
   .function{
     font-style: bold;
-    font-size: 2vw;
+    font-size: 35px;
   }
   .text-intro{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 16px;
   }
   .socials{
     position: relative;
-    width: 15vw;
-    height: 3vh;
+    width: 30%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
   }
   .socials a{
     position: relative;
     display: inline-flex;
-    width: 2.5vw;
-    height: 5vh;
+    width: 35px;
+    height: 35px;
     background: transparent;
     text-decoration: none;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 1.5vw;
+    font-size: 25px;
     background-color: var(--terciary-color);
     color: var(--terciary-color);
     z-index: 1;
@@ -138,12 +139,12 @@ header{
   }
   .habilidades{
     width: 100%;
-    height: 100vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 6%;
-    font-size: 1.5vw;
+    font-size: 20px;
   }
   .hl{
     height: 10%;
@@ -152,14 +153,14 @@ header{
     padding-bottom: 2%;
   }
   .skills{
-    height: 90%;
+    height: 100%;
     width: 65%;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
   .skills a{
-    font-size: 2.5vw;
+    font-size: 35px;
     text-decoration: none;
     background: transparent;
     overflow: hidden;
@@ -179,6 +180,9 @@ header{
     background: linear-gradient(90deg, var(--terciary-color), var(--primary-color));
     border-radius: 10% 0% 0% 10%;
   }
+  .tech a{
+    margin: 2% 0;
+  }
   .tech a:hover{
     background: var(--primary-color);
   }
@@ -192,6 +196,9 @@ header{
     background: linear-gradient(90deg, var(--primary-color), var(--terciary-color));
     border-radius: 0% 10% 10% 0%;
   }
+  .soft a{
+    margin: 2% 0;
+  }
   .soft a:hover{
     background: var(--primary-color);
   }
@@ -201,19 +208,23 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: 20px;
+    padding-top: 2%;
   }
   .projects-grid{
-    height: 70vh;
+    height: 75%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
+    padding-top: 5%;
   }
   .proj{
-    height: 50vh;
-    width: 30vw;
+    height: 100%;
+    width: 30%;
+    background-color: var(--scondary-color);
+    border-radius: 5%;
   }
   .project-tile{
     width: 100%;
@@ -223,16 +234,78 @@ header{
   .proj a{
     text-align: center;
     text-decoration: none;
-  } 
-  @media (max-width: 768px) {
-    body {
+  }
+  .proj p{
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  @media screen and (max-width: 768px) {
+    #welcome-section{
+      padding-top: 40%;
+      height: 100%;
+    }
+    body{
+      box-sizing: border-box;
       font-size: 14px;
+    }
+    header{
+      position: absolute;
+    }
+    .self{
+      flex-direction: column-reverse;
+    }
+    .name{
+      font-size: 2.2rem;
+    }
+    .intro{
+      width: 95%;
+    }
+    .img{
+      width: 100%;
+      height: 100%;
+    }
+    .socials{
+      width: 50%;
+    }
+    .job{
+      font-size: 1.8rem;
+    }
+    .function{
+      font-size: 1.8rem;
+    }
+    .skills a{
+      font-size: 17px;
+    }
+    .skills{
+      width: 90%;
+      height: 100%;
+    }
+    .tech a{
+      margin: 5% 0;
+    }
+    .soft a{
+      margin: 5% 0;
+    }
+    .habilidades{
+      padding-top: 30%;
+      padding-bottom: 30%;
+      width: 100%;
+    }
+    .hl{
+      padding-bottom: 10%;
+    }
+    .projects-head{
+      padding-bottom: 5%;
+    }
+    .projects-grid{
+      flex-direction: column;
+    }
+    .proj{
+      margin-bottom: 35%;
+      width: 90%;
+      height: 100%;
     }
   }
   
-  @media (max-width: 480px) {
-    body {
-      font-size: 12px; 
-    }
-  }
   
