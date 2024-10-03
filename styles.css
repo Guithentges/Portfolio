@@ -242,7 +242,7 @@ header{
   }
   @media screen and (max-width: 768px) {
     #welcome-section{
-      padding-top: 40%;
+      padding-top: 35%;
       height: 100%;
     }
     body{
